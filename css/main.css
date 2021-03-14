@@ -1,0 +1,101 @@
+html { overflow-x: hidden; }
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    line-height: 1.8em;
+    overflow-x: hidden;
+}
+.main{
+	background-color: #ffffff;
+}
+.main-m{
+	background-color: #ece4d8;
+}
+.line{
+	height: 3px;
+	background-color: #55534b;
+}
+span, a{ color: #848586; }
+h1 { font-size: 3rem; }
+div { box-sizing: border-box;}
+.mb-0 { margin-bottom: 0; }
+.mb-15 { margin-bottom: 15px; }
+.mt-0 { margin-top: 0; }
+.color { color: #55534b; }
+.color2 { color: #97b4ac; }
+.a-r{
+	
+	text-align: right;
+	font-size: 19px;
+	letter-spacing: 5px;
+	color: #bbbcbc;
+}
+img { max-width: 100%; }
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{ 
+    text-decoration: none; 
+    transition: all 0.3s ease;
+}
+
+
+header {
+    padding: 60px 70px 30px;
+}
+.info{
+	color:  #bbbcbc;
+}
+
+b{
+	font-size: 40px;
+	
+}
+.aloe-container {
+    max-height: 400px;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #309AFD;
+}
+
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 1254px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto 135px;
+}
+.btn-nav {
+    list-style: none;
+    margin: 22px;   
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border: 1px solid #D2D3D4;
+    color: #999; 
+    box-sizing: border-box;
+}
+
+
+
