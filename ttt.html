@@ -2,10 +2,15 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Dużo o roślinkach</title>
-    <link rel="stylesheet" href="css/info.css"> 
+	<title>Puzzle</title>
+	<link rel="stylesheet" href="css/ttt.css"> 
+
+	
 </head>
+
+
 <body>
+
 <div class="main">
 <div class="main-m">
     <header class="site-header">
@@ -17,48 +22,59 @@
 	<div class="line"></div>
 </div>
 <div class="flex-cont">
-<div class="inf-col">
-	<div class="container-photo" ></div>
-</div>
-<div class="inf-col">
-<div class="container info" ><b>L</b>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<div class="game-area">
 
-<div class="container info" ><b>L</b>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
-<div class="inf-col">
-	<div class="container-photo" ></div>
+		<div class="game-options">
+			
+			<input type="checkbox" name="robot" checked="true" id="robot"> With Computer? <br/>
+			<input type="submit" value="Start Game" onclick="generateGame()" class="submit-button"> 
+		</div>
+
+		<div id="game-board" class="game-board">
+			
+		</div>
+		<div class="score-card">
+			Player X Score: <span id="score-X">0</span> <br>
+			Player Y Score: <span id="score-Y">0</span>
+		</div>
+
+	</div>
 </div>
+
+
+
 </div>
 	
     <div class="container">
         <nav class="main-nav">
             <ul class="lst">
                 <li class="btn-nav">
-                    <a href="puzzle.html" class="nav-link">
-                        PUZZLE
-                        <img src="img/leaf.jpg"  alt="Image"/>
-                    </a>                
-                </li>
-                <li class="btn-nav">
-                    <a href="ttt.html" class="nav-link">
-                        TIC TAC TOE
+                    <a href="o-mnie.html" class="nav-link">
+                        O MNIE
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT 
+                        PIELĘGNACJA
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT
+                        SZKODNIKI
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT
+                        ROZMNAŻANIE
+                        <img src="img/leaf.jpg"  alt="Image"/>
+                    </a>                
+                </li>
+                <li class="btn-nav">
+                    <a href="error.html" class="nav-link">
+                        NIE DLA KOTA
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
@@ -67,6 +83,6 @@
 
 	</div>
 </div>
-
+<script src="js/ttt.js"></script>		
 </body>
 </html>
