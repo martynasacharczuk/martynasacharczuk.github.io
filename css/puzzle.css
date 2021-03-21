@@ -6,6 +6,63 @@ body {
     line-height: 1.8em;
     overflow-x: hidden;
 }
+::selection {background: transparent;}
+p{margin: 0; font: 12px/150% Arial; text-align: center; color: #888;}
+p a{color: #888;}
+.cont-B{
+	width:1000px;
+}
+#controls{text-align: center;}
+#controls button{
+	cursor: pointer;
+	outline: none;	
+	padding: 10px 20px;
+	margin: 25px 2px;
+	border: 0;
+	border-radius: 4px;
+	background: #55534b;
+	font: bold 14px Arial;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#controls button:hover{background: #003333;}
+
+#puzzle{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 3px solid #D2D3D4;
+	border-radius: 4px;
+}
+#puzzle span{
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+}
+#puzzle span.number{
+	cursor: pointer;
+	font: bold 36px/80px Arial;
+	text-align: center;
+	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#puzzle span.empty{background: transparent;}
+#puzzle span.number.style-1{background: #97b4ac ;}
+#puzzle span.number.style-2{background: #Bdcac6;}
+
+#puzzle.animate span{
+	-webkit-transition: 0.15s left, 0.15s top;
+ 	transition: 0.15s left, 0.15s top;
+}
+
+
+
 .main{
 	background-color: #ffffff;
 }
@@ -38,6 +95,12 @@ div { box-sizing: border-box;}
 	font-size: 19px;
 	letter-spacing: 5px;
 	color: #bbbcbc;
+}
+.a-t{
+	font-size: 19px;
+	letter-spacing: 5px;
+	color: #bbbcbc;
+	width: 600px;
 }
 #er{
 	width: 100px;
@@ -85,7 +148,13 @@ header {
 }
 .inf-col{
 	flex-direction:column;
+	width: 400px;
+}
+.inf-row{
+	flex-direction:row;
+	margin: 40px;
 	
+
 }
 .container-photo{
 	width:200px;

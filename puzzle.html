@@ -2,9 +2,13 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Dużo o roślinkach</title>
-    <link rel="stylesheet" href="css/info.css"> 
+	<title>Puzzle</title>
+	<link rel="stylesheet" href="css/puzzle.css"> 
+
+	
 </head>
+
+
 <body>
 <div class="main">
 <div class="main-m">
@@ -20,12 +24,20 @@
 <div class="inf-col">
 	<div class="container-photo" ></div>
 </div>
-<div class="inf-col">
-<div class="container info" ><b>L</b>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
-<div class="container info" ><b>L</b>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
 <div class="inf-col">
-	<div class="container-photo" ></div>
+	<div id="puzzle"></div>
+	<div id="controls">
+		<button id="solve">Rozwiąż</button>		
+		<button id="scramble">Mieszaj</button>
+	</div>
+</div>	
+
+
+
+<div class="inf-col">
+	<div class="inf-row container-photo" ><h2 class="mt-0 a-t">Rozwiąż, aby zobaczyć pielęgnacyjny tip!</h2> </div>
+	<div class="inf-row container-photo"><p class="mt-0 a-t" id="p1" > </p></div>
 </div>
 </div>
 	
@@ -33,32 +45,32 @@
         <nav class="main-nav">
             <ul class="lst">
                 <li class="btn-nav">
-                    <a href="puzzle.html" class="nav-link">
-                        PUZZLE
+                    <a href="o-mnie.html" class="nav-link">
+                        O MNIE
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT
+                        PIELĘGNACJA
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT 
+                        SZKODNIKI
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT
+                        ROZMNAŻANIE
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
-                        INNY PROJEKT
+                        NIE DLA KOTA
                         <img src="img/leaf.jpg"  alt="Image"/>
                     </a>                
                 </li>
@@ -67,6 +79,6 @@
 
 	</div>
 </div>
-
+		<script src="js/puzzle.js"></script>
 </body>
 </html>
