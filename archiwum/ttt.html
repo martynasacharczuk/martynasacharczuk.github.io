@@ -2,14 +2,15 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-	<title>Puzzle</title>
-	<link rel="stylesheet" href="css/puzzle.css"> 
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="css/ttt.css"> 
 
 	
 </head>
 
 
 <body>
+
 <div class="main">
 <div class="main-m">
     <header class="site-header">
@@ -21,24 +22,27 @@
 	<div class="line"></div>
 </div>
 <div class="flex-cont">
-<div class="inf-col">
-	<div class="container-photo" ></div>
-</div>
+<div class="game-area">
 
-<div class="inf-col">
-	<div id="puzzle"></div>
-	<div id="controls">
-		<button id="solve">Rozwiąż</button>		
-		<button id="scramble">Mieszaj</button>
+		<div class="game-options">
+			
+			<input type="checkbox" name="robot" id="robot" checked> With Computer? <br/>
+			<input type="submit" value="Start Game" onclick="generateGame()" class="submit-button"> 
+		</div>
+
+		<div id="game-board" class="game-board">
+			
+		</div>
+		<div class="score-card">
+			Player X Score: <span id="score-X">0</span> <br>
+			Player Y Score: <span id="score-Y">0</span>
+		</div>
+
 	</div>
-</div>	
-
-
-
-<div class="inf-col">
-	<div class="inf-row container-photo" ><h2 class="mt-0 a-t">Rozwiąż, aby zobaczyć pielęgnacyjny tip!</h2> </div>
-	<div class="inf-row container-photo"><p class="mt-0 a-t" id="p1" > </p></div>
 </div>
+
+
+
 </div>
 	
     <div class="container">
@@ -47,38 +51,38 @@
                 <li class="btn-nav">
                     <a href="o-mnie.html" class="nav-link">
                         O MNIE
-                        <img src="img/leaf.jpg"  alt="Image"/>
+
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
                         PIELĘGNACJA
-                        <img src="img/leaf.jpg"  alt="Image"/>
+
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
                         SZKODNIKI
-                        <img src="img/leaf.jpg"  alt="Image"/>
+
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
                         ROZMNAŻANIE
-                        <img src="img/leaf.jpg"  alt="Image"/>
+
                     </a>                
                 </li>
                 <li class="btn-nav">
                     <a href="error.html" class="nav-link">
                         NIE DLA KOTA
-                        <img src="img/leaf.jpg"  alt="Image"/>
+
                     </a>                
                 </li>
             </ul>
         </nav>
 
 	</div>
-</div>
-		<script src="js/puzzle.js"></script>
+
+<script src="js/ttt.js"></script>		
 </body>
 </html>

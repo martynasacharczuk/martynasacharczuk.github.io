@@ -251,4 +251,135 @@ a {
 .score-card span {
 	font-weight: normal;
 }
+@media (max-width: 700px) {
+    .tm-about-row {
+        flex-direction: column;
+    }
+    .tm-about-col {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 1264px) {
+    .tm-main-nav ul { 
+        max-width: 976px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .tm-main-nav ul {
+        max-width: 732px;
+    }
+}
+
+@media (max-width: 776px) {
+    .tm-main-nav ul {
+        max-width: 488px;        
+    }
+}
+
+@media (max-width: 532px) {
+    .tm-main-nav ul { 
+        max-width: 244px;
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .tm-intro-row {
+        flex-direction: column;
+    }
+
+    .tm-intro-img {
+        max-width: 100%;
+        max-height: none;
+    }
+	.nav-link {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border: 1px solid #D2D3D4;
+    color: #999; 
+    box-sizing: border-box;
+	
+}
+	.container{
+		max-width: 800px;
+		text-align: center;
+	}
+	.znik{
+		width: 120px;
+	}
+}
+@media (max-width: 800px) {
+    .tm-intro-row {
+        flex-direction: row;
+    }
+
+    .tm-intro-img {
+        max-width: 100%;
+        max-height: none;
+    }
+	.nav-link {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border: 1px solid #D2D3D4;
+    color: #999; 
+    box-sizing: border-box;
+	
+}
+	.container{
+		max-width: 540px;
+		text-align: center;
+	}
+	.znik{
+		width: 80px;
+	}
+	.inf-row{
+		max-width:560px;
+	}
+	.flex-cont{
+		max-width:700px;
+		text-align:center;
+	}
+	.a-t{
+	width:390px;
+}
+}
+
+@media (max-width: 540px) {
+	.nav-link {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    width: 400px;
+    height: 100px;
+    padding: 30px;
+    border: 1px solid #D2D3D4;
+    color: #999; 
+    box-sizing: border-box;
+}
+.container{
+		max-width: 540px;
+		text-align: center;
+	}
+.znik{
+	width:15px;
+}
+.inf-row{
+		width:400px;
+	}
+.a-t{
+	width:300px;
+}
+
+}
 
